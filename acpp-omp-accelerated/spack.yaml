@@ -1,0 +1,15 @@
+spack:
+  specs:
+    - mpich
+    - neso-particles -build_tests +petsc  ^neso.adaptivecpp compilationflow=ompaccelerated
+    - neso-rng-toolkit ^neso.adaptivecpp compilationflow=ompaccelerated
+  view: true
+  concretizer:
+    unify: false
+  repos:
+    - ../../NESO-Spack
+    - $spack/var/spack/repos/builtin
+  develop:
+    neso-particles:
+      path: ../../NESO-Particles
+      spec: neso-particles@working
