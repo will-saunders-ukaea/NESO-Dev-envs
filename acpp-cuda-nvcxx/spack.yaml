@@ -1,7 +1,6 @@
 spack:
   specs:
-    - mpich
-    - neso-particles -build_tests +petsc  ^neso.adaptivecpp compilationflow=cudanvcxx
+    - neso-particles -build_tests +petsc  ^neso.adaptivecpp compilationflow=cudanvcxx ^mpich
     - neso-rng-toolkit ^neso.adaptivecpp compilationflow=cudanvcxx
   view: true
   concretizer:
