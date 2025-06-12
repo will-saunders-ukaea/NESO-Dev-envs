@@ -1,6 +1,6 @@
 spack:
   specs:
-    - neso-particles -build_tests +petsc %oneapi ^dpcpp ^petsc%oneapi^intel-oneapi-mkl ^intel-oneapi-mpi%oneapi
+    - neso-particles -build_tests +petsc %oneapi ^dpcpp ^petsc%oneapi^openblas ^intel-oneapi-mpi%oneapi
     - neso-rng-toolkit%oneapi ^dpcpp
   view: true
   concretizer:
@@ -12,3 +12,6 @@ spack:
     neso-particles:
       path: ../../NESO-Particles
       spec: neso-particles@working
+    neso-rng-toolkit:
+      path: ../../NESO-RNG-Toolkit
+      spec: neso-rng-toolkit@working
