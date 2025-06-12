@@ -1,6 +1,6 @@
 spack:
   specs:
-    - neso-particles -build_tests +petsc %oneapi ^dpcpp ^petsc%oneapi^openblas ^intel-oneapi-mpi%oneapi
+    - neso-particles -build_tests +petsc %oneapi ^dpcpp ^petsc%oneapi^intel-oneapi-mkl ^intel-oneapi-mpi%oneapi
     - neso-rng-toolkit%oneapi ^dpcpp
   view: true
   concretizer:
